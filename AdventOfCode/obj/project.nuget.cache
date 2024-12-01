@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "oLEmBHoJFwvmmbiCCTBDQPIsBl69lGbu4eVHQ3UXLYKuAJfUfHB3k+haqGlV0HC0JPfzChMHacuuItqwPBsucQ==",
+  "success": true,
+  "projectFilePath": "/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/AdventOfCode.csproj",
+  "expectedPackageFiles": [
+    "/Users/harvey/.nuget/packages/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.configuration.binder/9.0.0/microsoft.extensions.configuration.binder.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.configuration.fileextensions/9.0.0/microsoft.extensions.configuration.fileextensions.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.configuration.json/9.0.0/microsoft.extensions.configuration.json.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.fileproviders.abstractions/9.0.0/microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.fileproviders.physical/9.0.0/microsoft.extensions.fileproviders.physical.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.filesystemglobbing/9.0.0/microsoft.extensions.filesystemglobbing.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/system.io.pipelines/9.0.0/system.io.pipelines.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/system.text.encodings.web/9.0.0/system.text.encodings.web.9.0.0.nupkg.sha512",
+    "/Users/harvey/.nuget/packages/system.text.json/9.0.0/system.text.json.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
