@@ -31,3 +31,6 @@
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/app-settings.json
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day1Input1.txt
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day1Input1Test.txt
+/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day2Input1.txt
+/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/obj/Debug/net8.0/AdventOfCode.sourcelink.json
+/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day2Input1Test.txt

@@ -1,22 +1,21 @@
-namespace AdventOfCode.Days.Day1;
+namespace AdventOfCode.Days.Day2;
 
 public static class FileReader
 {
-    public static List<LocationPair> GetLocationPair(string inputFile)
+    public static List<LevelReport> GetLevelReports(string inputFile)
     {
         var reader = new StreamReader(inputFile);
         var lines = reader.ReadToEnd().Split("\n");
 
         var splitEachLine = lines.Select(line => line.Split()).ToList();
         var removeEmpties = splitEachLine.Select(line => line.Where(x => x != "").ToList()).ToList();
-        var locationPairLists = removeEmpties.Select(line => line.Select(int.Parse).ToList()).ToList();
+        var reports = removeEmpties.Select(line => line.Select(int.Parse).ToList()).ToList();
 
-        return locationPairLists.Select(locationPair => new LocationPair { Location1 = locationPair[0], Location2 = locationPair[1]}).ToList();
+        return reports.Select(report => new LevelReport { Levels = report }).ToList();
     }
 
-    public class LocationPair
+    public class LevelReport
     {
-        public int Location1 { get; set; }
-        public int Location2 { get; set; }
+        public List<int> Levels { get; set; }
     }
 }
