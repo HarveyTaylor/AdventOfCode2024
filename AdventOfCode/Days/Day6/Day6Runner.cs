@@ -1,5 +1,4 @@
-using System.Data;
-using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace AdventOfCode.Days.Day6;
 
@@ -9,14 +8,14 @@ public static class Day6Runner
     {
         var guardMap = FileReader.Get(filePath);
 
-        var calc = Part1(guardMap);
+        var (calc, mapWithPath) = Part1(guardMap);
         Console.WriteLine($"Part 1: {calc}");
 
-        calc = Part2(guardMap);
+        calc = Part2(guardMap, mapWithPath);
         Console.WriteLine($"Part 2: {calc}");
     }
 
-    private static int Part1(List<List<char>> guardMap)
+    private static (int count, List<List<char>>) Part1(List<List<char>> guardMap)
     {
         var escaped = false;
         var currentLine = guardMap.FindIndex(line => line.Any(c => c is '^' or '>' or '<' or 'v'));
@@ -85,7 +84,7 @@ public static class Day6Runner
             }
         }
 
-        return guardMapCopy.Select(line => line.Count(c => c == 'X')).Sum();
+        return (guardMapCopy.Select(line => line.Count(c => c == 'X')).Sum(), guardMapCopy);
     }
 
     enum DirectionOfTravel
@@ -96,15 +95,18 @@ public static class Day6Runner
         Left
     }
 
-    private static int Part2(List<List<char>> guardMap)
+    private static int Part2(List<List<char>> guardMap, List<List<char>> mapWithPath)
     {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+        
         var copy = new List<List<char>>(guardMap.Select(line => new List<char>(line)));
         var count = 0;
         for (var y = 0; y < guardMap.Count; y++)
         {
             for (var x = 0; x < copy[y].Count; x++)
             {
-                if (copy[y][x] == '.' && !Escapes(new List<List<char>>(guardMap.Select(line => new List<char>(line))), (x, y)))
+                if (copy[y][x] == '.' && mapWithPath[y][x] == 'X' && !Escapes(new List<List<char>>(guardMap.Select(line => new List<char>(line))), (x, y)))
                 {
                     Console.WriteLine($"Obstruction Causes Loop: {x.ToString()}, {y.ToString()}");
                     count++;
@@ -118,6 +120,8 @@ public static class Day6Runner
             }
         }
 
+        stopwatch.Stop();
+        Console.WriteLine($"Time Taken: {stopwatch.ElapsedMilliseconds}ms");
         return count;
     }
     

@@ -6,6 +6,7 @@ using AdventOfCode.Days.Day3;
 using AdventOfCode.Days.Day4;
 using AdventOfCode.Days.Day5;
 using AdventOfCode.Days.Day6;
+using AdventOfCode.Days.Day7;
 using AdventOfCode.Infrastructure.Configuration;
 
 var configuration = ConfigBuilder.GetConfiguration();
@@ -34,6 +35,10 @@ switch (configuration.Day)
     
     case 6:
         Day6Runner.Run(configuration.PathToInputFile);
+        break;
+    
+    case 7:
+        Day7Runner.Run(configuration.PathToInputFile);
         break;
     
     case 26 : //Practice from year 2023 (6th)
