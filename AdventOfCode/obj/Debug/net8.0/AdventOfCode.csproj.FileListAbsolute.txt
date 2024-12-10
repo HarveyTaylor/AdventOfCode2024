@@ -47,3 +47,5 @@
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day8Input.txt
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day9Input.txt
 /Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day9InputTest.txt
+/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day10Input.txt
+/Users/harvey/Git/AdventOfCode2024/AdventOfCode/AdventOfCode/bin/Debug/net8.0/Infrastructure/InputFiles/Day10InputTest.txt

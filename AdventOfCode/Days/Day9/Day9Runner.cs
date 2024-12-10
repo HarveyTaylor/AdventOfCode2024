@@ -117,9 +117,6 @@ public static class Day9Runner
         {
             answerCount += i * diskFreeSpaceMapped[i] ?? 0;
         }
-
-        var print = String.Join(", ", diskFreeSpaceMapped.Select(x => x == null ? "." : x.ToString()));
-        Console.WriteLine(print);
         return answerCount;
     }
 
